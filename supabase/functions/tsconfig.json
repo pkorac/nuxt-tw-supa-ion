@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "target": "esnext", // Compile to a modern ECMAScript version
+    "module": "esnext", // Use ES modules
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enables compatibility with Babel or CommonJS modules
+    "moduleResolution": "node", // Use Node.js style module resolution
+    "baseUrl": ".", // Set base directory for non-relative module imports
+    "paths": {
+      "*": ["*", "./types/*"] // Resolve all modules to current directory or the types folder
+    },
+    "types": [
+      "deno.ns" // Include Deno namespace types if available
+    ]
+  },
+  "include": [
+    "./**/*.ts" // Include all TypeScript files in the project
+  ],
+  "exclude": [
+    "node_modules" // Exclude node_modules directory
+  ]
+}
