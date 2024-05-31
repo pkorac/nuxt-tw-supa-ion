@@ -17,9 +17,12 @@
 			<ion-button router-link="/role" expand="block" fill="outline"
 				>Change role</ion-button
 			>
+			<ion-button expand="block" fill="outline" @click="logout"
+				>Logout</ion-button
+			>
 		</div>
 	</ds-page>
 </template>
 <script setup>
-const { user } = useAuth();
+const { user, logout } = useAuth();
 </script>

@@ -15,7 +15,7 @@
 </template>
 <script setup>
 const callFunc = useFunctions();
-const { user, refreshDetails } = useAuth();
+const { user, refreshUserData } = useAuth();
 const role = ref("user");
 
 onMounted(() => {
@@ -29,7 +29,7 @@ async function changeRole() {
 		console.log("error", error);
 	} else {
 		console.log("Updated role", data);
-		await refreshDetails();
+		await refreshUserData();
 	}
 }
 </script>
