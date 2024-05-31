@@ -86,7 +86,7 @@ const {
   logout: authLogout,
   register: authRegister,
 } = useAuth();
-const email = ref("kai@me.com");
+const email = ref("kai@creativecrow.io");
 const password = ref("asdfgh");
 const fullName = ref("");
 const errorMessage = ref(null);
